@@ -1,0 +1,27 @@
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+[language-server.typescript-language-server.filetypes]
+jsx = "javascriptreact"
+tsx = "typescriptreact"
