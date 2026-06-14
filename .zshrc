@@ -8,8 +8,15 @@ alias ls='ls --color=auto'
 alias ll='ls --all -l --classify'
 alias github='xdg-open https://github.com'
 alias dot='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
-alias dev='cd $HOME/Projects'
 alias ..='cd ..'
+
+dev(){
+  if [ -n "$1" ]; then
+    cd $HOME/Projects/*$1*
+  else
+    cd $HOME/Projects
+  fi   
+}
 
 GIT_PS1_SHOWUPSTREAM=yes
 GIT_PS1_SHOWDIRTYSTATE=yes
