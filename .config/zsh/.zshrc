@@ -1,8 +1,14 @@
-autoload -Uz compinit
-compinit
+zmodload zsh/complist
+autoload -U compinit && compinit
+autoload -U colors && colors
 
-# Load Angular CLI autocompletion.
-# source <(ng completion script)
+zstyle ':completion:*' menu select
+zstyle ':completion:*' special-dirs true
+
+HISTSIZE=1000000
+SAVEHIST=1000000
+HISTFILE="$XDG_CACHE_HOME/zsh_history"
+HISTCONTROL=ignoreboth
 
 alias ls='ls --color=auto'
 alias ll='ls --all -l --classify'
@@ -27,4 +33,5 @@ GIT_PS1_SHOWCOLORHINTS=yes
 
 . ~/git-prompt.sh
 
-setopt PROMPT_SUBST ; PS1='%F{green}%n%f%F{yellow}@%m%f %F{red}%c%f$(__git_ps1 " (%s)")\$ '
+echo -e "$(uptime -p)"
+setopt PROMPT_SUBST ; PS1='%F{green}%n%f %F{red}%c%f$(__git_ps1 " (%s)") \$ '
