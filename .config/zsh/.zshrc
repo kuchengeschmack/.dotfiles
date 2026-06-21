@@ -33,5 +33,7 @@ GIT_PS1_SHOWCOLORHINTS=yes
 
 . ~/git-prompt.sh
 
+setopt autocd
+
 echo -e "$(uptime -p)"
-setopt PROMPT_SUBST ; PS1='%F{green}%n%f %F{red}%c%f$(__git_ps1 " (%s)") \$ '
+setopt PROMPT_SUBST ; PS1='%F{green}%n%f %F{red}%c%f$(__git_ps1 " (%s)") ❯ '
