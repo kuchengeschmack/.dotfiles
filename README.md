@@ -1,5 +1,3 @@
-# My .dotfiles
-
 ```bash
 # Based on an original idea from: https://news.ycombinator.com/item?id=11071754
 
