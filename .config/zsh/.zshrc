@@ -32,7 +32,7 @@ GIT_PS1_SHOWUNTRACKEDFILES=yes
 GIT_PS1_SHOWCONFLICTSTATE=yes
 GIT_PS1_SHOWCOLORHINTS=yes
 
-. ~/git-prompt.sh
+. ~/.config/git/.git-prompt.sh
 
 setopt autocd
 
