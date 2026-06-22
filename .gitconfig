@@ -7,7 +7,7 @@
 [alias]
 	adog = log --all --decorate --oneline --graph
 [core]
-	editor = hx
+	editor = helix
 [pull]
 	rebase = false
 [merge]

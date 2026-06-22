@@ -15,6 +15,7 @@ alias ll='ls --all -l --classify'
 alias github='xdg-open https://github.com'
 alias dot='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 alias ..='cd ..'
+alias hx='helix'
 
 dev(){
   if [ -n "$1" ]; then
