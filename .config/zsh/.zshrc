@@ -11,7 +11,8 @@ HISTFILE="$XDG_CACHE_HOME/zsh_history"
 HISTCONTROL=ignoreboth
 
 alias ls='ls --color=auto'
-alias ll='ls --all -l --classify'
+alias la='ls --all'
+alias ll='la -l --classify'
 alias github='xdg-open https://github.com'
 alias dot='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 alias ..='cd ..'
@@ -35,6 +36,4 @@ GIT_PS1_SHOWCOLORHINTS=yes
 . ~/.config/git/.git-prompt.sh
 
 setopt autocd
-
-echo -e "$(uptime -p)"
 setopt PROMPT_SUBST ; PS1='%F{green}%n%f %F{red}%c%f$(__git_ps1 " (%s)") ❯ '
