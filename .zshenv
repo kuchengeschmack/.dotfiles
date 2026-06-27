@@ -1,6 +1,3 @@
-#!/bin/sh
-# add `export ZDOTDIR="$HOME/.config/zsh"` to /etc/zsh/zshenv so that this file is sourced
-
 export EDITOR="helix"
 
 export XDG_CONFIG_HOME="$HOME/.config"
