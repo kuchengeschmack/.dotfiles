@@ -10,9 +10,9 @@ SAVEHIST=1000000
 HISTFILE="$XDG_CACHE_HOME/zsh_history"
 HISTCONTROL=ignoreboth
 
-alias ls='ls --color=auto'
-alias la='ls --all'
-alias ll='la -l --classify'
+alias ls='ls --color=always'
+alias la='ls -a'
+alias ll='la -l'
 alias github='xdg-open https://github.com'
 alias dot='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 alias ..='cd ..'
