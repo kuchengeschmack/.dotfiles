@@ -6,13 +6,7 @@
 	defaultBranch = main
 [alias]
 	adog = log --all --decorate --oneline --graph
-[core]
-	editor = helix
 [pull]
 	rebase = false
-[merge]
-	tool = vimdiff
-[diff]
-	tool = vimdiff
 [push]
 	autoSetupRemote = true
