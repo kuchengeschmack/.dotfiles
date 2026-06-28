@@ -1,1 +1,1 @@
-source $HOME/.config/bash/.bashrc
+source $XDG_CONFIG_HOME/.bash_aliases
