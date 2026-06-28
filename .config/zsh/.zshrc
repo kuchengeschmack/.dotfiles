@@ -1,4 +1,4 @@
-. $XDG_CONFIG_HOME/.bash_aliases
+. $XDG_CONFIG_HOME/bash/.bash_aliases
 
 zmodload zsh/complist
 autoload -U compinit && compinit
