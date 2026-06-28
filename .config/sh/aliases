@@ -8,8 +8,8 @@ alias hx='helix'
 
 dev(){
   if [ -n "$1" ]; then
-    cd $HOME/Projects/*$1*
+    cd $XDG_PROJECTS_DIR/*$1*
   else
-    cd $HOME/Projects
+    cd $XDG_PROJECTS_DIR
   fi
 }
