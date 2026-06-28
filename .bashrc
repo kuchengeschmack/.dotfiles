@@ -1,1 +1,1 @@
-. $XDG_CONFIG_HOME/.bash_aliases
+. $XDG_CONFIG_HOME/sh/aliases
