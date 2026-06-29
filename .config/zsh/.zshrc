@@ -1,4 +1,4 @@
-. $XDG_CONFIG_HOME/sh/aliases
+. $XDG_CONFIG_HOME/sh/common
 
 zmodload zsh/complist
 autoload -U compinit && compinit
@@ -11,15 +11,6 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 HISTFILE="$XDG_CACHE_HOME/zsh_history"
 HISTCONTROL=ignoreboth
-
-GIT_PS1_SHOWUPSTREAM=yes
-GIT_PS1_SHOWDIRTYSTATE=yes
-GIT_PS1_SHOWSTASHSTATE=yes
-GIT_PS1_SHOWUNTRACKEDFILES=yes
-GIT_PS1_SHOWCONFLICTSTATE=yes
-GIT_PS1_SHOWCOLORHINTS=yes
-
-. $XDG_CONFIG_HOME/scripts/git-prompt.sh
 
 setopt autocd
 setopt PROMPT_SUBST ; PS1='%F{green}%n%f %F{red}%c%f$(__git_ps1 " (%s)") > '
